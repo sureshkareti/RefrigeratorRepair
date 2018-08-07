@@ -1,0 +1,283 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D130FCD0-6F24-467A-9555-FCA9E3EC5A8C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HomeApplianceRepairing</RootNamespace>
+    <AssemblyName>HomeApplianceRepairing</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="rs\rs\services-modern.html" />
+    <Content Include="rs\rs\image\1520161376_refrigerator.jpg" />
+    <Content Include="rs\rs\image\about.jpg" />
+    <Content Include="rs\rs\image\default-refrigerator-repair-and-services-4.jpg" />
+    <Content Include="rs\rs\image\download433.jpg" />
+    <Content Include="rs\rs\image\download434.jpg" />
+    <Content Include="rs\rs\image\Motherboard.jpg" />
+    <Content Include="rs\rs\image\my_sub_app_hero_006.jpg" />
+    <Content Include="rs\rs\about.html" />
+    <Content Include="rs\rs\contact.html" />
+    <Content Include="rs\rs\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="rs\rs\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="rs\rs\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="rs\rs\fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="rs\rs\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="rs\rs\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="rs\rs\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="rs\rs\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="rs\rs\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="rs\rs\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="rs\rs\fonts\poppins\poppins-bold-webfont.eot" />
+    <Content Include="rs\rs\fonts\poppins\poppins-bold-webfont.ttf" />
+    <Content Include="rs\rs\fonts\poppins\poppins-bold-webfont.woff" />
+    <Content Include="rs\rs\fonts\poppins\poppins-bold-webfont.woff2" />
+    <Content Include="rs\rs\fonts\poppins\poppins-bold-webfontd41d.eot" />
+    <Content Include="rs\rs\fonts\poppins\poppins-light-webfont.eot" />
+    <Content Include="rs\rs\fonts\poppins\poppins-light-webfont.ttf" />
+    <Content Include="rs\rs\fonts\poppins\poppins-light-webfont.woff" />
+    <Content Include="rs\rs\fonts\poppins\poppins-light-webfont.woff2" />
+    <Content Include="rs\rs\fonts\poppins\poppins-light-webfontd41d.eot" />
+    <Content Include="rs\rs\fonts\poppins\poppins-regular-webfont.eot" />
+    <Content Include="rs\rs\fonts\poppins\poppins-regular-webfont.ttf" />
+    <Content Include="rs\rs\fonts\poppins\poppins-regular-webfont.woff" />
+    <Content Include="rs\rs\fonts\poppins\poppins-regular-webfont.woff2" />
+    <Content Include="rs\rs\fonts\poppins\poppins-regular-webfontd41d.eot" />
+    <Content Include="rs\rs\fonts\poppins\poppins-semibold-webfont.eot" />
+    <Content Include="rs\rs\fonts\poppins\poppins-semibold-webfont.ttf" />
+    <Content Include="rs\rs\fonts\poppins\poppins-semibold-webfont.woff" />
+    <Content Include="rs\rs\fonts\poppins\poppins-semibold-webfont.woff2" />
+    <Content Include="rs\rs\fonts\poppins\poppins-semibold-webfontd41d.eot" />
+    <Content Include="rs\rs\fonts\roboto\roboto-bold-webfont.eot" />
+    <Content Include="rs\rs\fonts\roboto\roboto-bold-webfont.ttf" />
+    <Content Include="rs\rs\fonts\roboto\roboto-bold-webfont.woff" />
+    <Content Include="rs\rs\fonts\roboto\roboto-bold-webfont.woff2" />
+    <Content Include="rs\rs\fonts\roboto\roboto-bold-webfontd41d.eot" />
+    <Content Include="rs\rs\fonts\roboto\roboto-light-webfont.eot" />
+    <Content Include="rs\rs\fonts\roboto\roboto-light-webfont.ttf" />
+    <Content Include="rs\rs\fonts\roboto\roboto-light-webfont.woff" />
+    <Content Include="rs\rs\fonts\roboto\roboto-light-webfont.woff2" />
+    <Content Include="rs\rs\fonts\roboto\roboto-light-webfontd41d.eot" />
+    <Content Include="rs\rs\fonts\roboto\roboto-regular-webfont.eot" />
+    <Content Include="rs\rs\fonts\roboto\roboto-regular-webfont.ttf" />
+    <Content Include="rs\rs\fonts\roboto\roboto-regular-webfont.woff" />
+    <Content Include="rs\rs\fonts\roboto\roboto-regular-webfont.woff2" />
+    <Content Include="rs\rs\fonts\roboto\roboto-regular-webfontd41d.eot" />
+    <Content Include="rs\rs\image\175437243.jpg" />
+    <Content Include="rs\rs\image\591415736.jpg" />
+    <Content Include="rs\rs\image\Crop1.jpg" />
+    <Content Include="rs\rs\image\crop2.jpg" />
+    <Content Include="rs\rs\image\crop3.jpg" />
+    <Content Include="rs\rs\image\CropLog.png" />
+    <Content Include="rs\rs\image\master_key_repair_washing_machine_smile_79827_2780x2780.jpg" />
+    <Content Include="rs\rs\image\Refrigerator-Repair-Service.jpg" />
+    <Content Include="rs\rs\image\refrigerator-repair.jpg" />
+    <Content Include="rs\rs\image\refrigeratorgascharging.JPG" />
+    <Content Include="rs\rs\image\refrigerator_large.jpg" />
+    <Content Include="rs\rs\image\washing-machine-repairs433.jpg" />
+    <Content Include="rs\rs\image\washing_machine4.jpg" />
+    <Content Include="rs\rs\index.html" />
+    <Content Include="hts-cache\doit.log" />
+    <Content Include="hts-cache\new.zip" />
+    <Content Include="hts-cache\winprofile.ini" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="backblue.gif" />
+    <Content Include="rs\rs\css\owl.video.play.html" />
+    <Content Include="rs\rs\css\style.css" />
+    <Content Include="rs\rs\css\vendor.bundle.css" />
+    <Content Include="rs\rs\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="rs\rs\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="rs\rs\image\arrow-next-g.png" />
+    <Content Include="rs\rs\image\arrow-next-w.png" />
+    <Content Include="rs\rs\image\arrow-prev-g.png" />
+    <Content Include="rs\rs\image\arrow-prev-w.png" />
+    <Content Include="rs\rs\image\banner-inner.jpg" />
+    <Content Include="rs\rs\image\client-logo-a.png" />
+    <Content Include="rs\rs\image\client-logo-b.png" />
+    <Content Include="rs\rs\image\client-logo-c.png" />
+    <Content Include="rs\rs\image\client-logo-d.png" />
+    <Content Include="rs\rs\image\client-logo-e.png" />
+    <Content Include="rs\rs\image\client-logo-f.png" />
+    <Content Include="rs\rs\image\client-logo-g.png" />
+    <Content Include="rs\rs\image\client-logo-h.png" />
+    <Content Include="rs\rs\image\favicon.png" />
+    <Content Include="rs\rs\image\form-bg.jpg" />
+    <Content Include="rs\rs\image\gallery\g1-lg.jpg" />
+    <Content Include="rs\rs\image\gallery\g1.jpg" />
+    <Content Include="rs\rs\image\gallery\g2-lg.jpg" />
+    <Content Include="rs\rs\image\gallery\g2.jpg" />
+    <Content Include="rs\rs\image\gallery\g3-lg.jpg" />
+    <Content Include="rs\rs\image\gallery\g3.jpg" />
+    <Content Include="rs\rs\image\gallery\g4-lg.jpg" />
+    <Content Include="rs\rs\image\gallery\g4.jpg" />
+    <Content Include="rs\rs\image\gallery\g5-lg.jpg" />
+    <Content Include="rs\rs\image\gallery\g5.jpg" />
+    <Content Include="rs\rs\image\gallery\g6-lg.jpg" />
+    <Content Include="rs\rs\image\gallery\g6.jpg" />
+    <Content Include="rs\rs\image\gallery\g7-lg.jpg" />
+    <Content Include="rs\rs\image\gallery\g7.jpg" />
+    <Content Include="rs\rs\image\gallery\g8-lg.jpg" />
+    <Content Include="rs\rs\image\gallery\g8.jpg" />
+    <Content Include="rs\rs\image\loading.html" />
+    <Content Include="rs\rs\image\logo-white.png" />
+    <Content Include="rs\rs\image\logo.png" />
+    <Content Include="rs\rs\image\news-a.jpg" />
+    <Content Include="rs\rs\image\news-b.jpg" />
+    <Content Include="rs\rs\image\news-c.jpg" />
+    <Content Include="rs\rs\image\news-d.jpg" />
+    <Content Include="rs\rs\image\news-lg-a.jpg" />
+    <Content Include="rs\rs\image\news-thumb-a.jpg" />
+    <Content Include="rs\rs\image\news-thumb-b.jpg" />
+    <Content Include="rs\rs\image\news-thumb-c.jpg" />
+    <Content Include="rs\rs\image\news-thumb-d.jpg" />
+    <Content Include="rs\rs\image\partner-logo-a.png" />
+    <Content Include="rs\rs\image\partner-logo-b.png" />
+    <Content Include="rs\rs\image\photo-a.jpg" />
+    <Content Include="rs\rs\image\photo-b.jpg" />
+    <Content Include="rs\rs\image\photo-c.jpg" />
+    <Content Include="rs\rs\image\photo-d.jpg" />
+    <Content Include="rs\rs\image\photo-e.jpg" />
+    <Content Include="rs\rs\image\photo-f.jpg" />
+    <Content Include="rs\rs\image\photo-g.jpg" />
+    <Content Include="rs\rs\image\photo-h.jpg" />
+    <Content Include="rs\rs\image\photo-i.jpg" />
+    <Content Include="rs\rs\image\photo-j.jpg" />
+    <Content Include="rs\rs\image\photo-k.jpg" />
+    <Content Include="rs\rs\image\photo-l.jpg" />
+    <Content Include="rs\rs\image\photo-md-a.jpg" />
+    <Content Include="rs\rs\image\photo-sq-a.jpg" />
+    <Content Include="rs\rs\image\photo-sq-b.jpg" />
+    <Content Include="rs\rs\image\photo-sq-c.jpg" />
+    <Content Include="rs\rs\image\plx-dark.jpg" />
+    <Content Include="rs\rs\image\slider-a.jpg" />
+    <Content Include="rs\rs\image\slider-b.jpg" />
+    <Content Include="rs\rs\image\slider-c.jpg" />
+    <Content Include="rs\rs\image\slider-d.jpg" />
+    <Content Include="rs\rs\image\slider-e.jpg" />
+    <Content Include="rs\rs\image\team-sq-a.jpg" />
+    <Content Include="rs\rs\image\team-sq-b.jpg" />
+    <Content Include="rs\rs\image\team-sq-c.jpg" />
+    <Content Include="rs\rs\image\team-sq-d.jpg" />
+    <Content Include="rs\rs\js\gmaps.js" />
+    <Content Include="rs\rs\js\jquery.bundle.js" />
+    <Content Include="rs\rs\js\script.js" />
+    <Content Include="fade.gif" />
+    <Content Include="hts-cache\new.lst" />
+    <Content Include="hts-cache\new.txt" />
+    <Content Include="hts-cache\readme.txt" />
+    <Content Include="hts-log.txt" />
+    <Content Include="index.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58604</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58604/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
