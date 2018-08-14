@@ -14,6 +14,99 @@
 		/* Only Demo Purpose */
 		.colorPanel {margin: 0;padding: 5px;position: fixed;z-index: 100;min-width: 20px; border-radius: 3px 0 0 3px; background-color: #EDC63C;right:0;top: 35%;} .colorPanel ul {margin:0px;padding:0px;list-style: none;display:none;} .colorPanel ul li {display: block;margin-top: 10px;} .colorPanel ul a {display: block;width: 20px;height: 20px;border: #fff 1px solid;} .colorPanel a.cart {border-bottom: 1px solid rgba(255,255,255,.3); margin-bottom: 6px; padding-bottom: 8px;display: block;} #cpToggle{display:block;height:30px; width:20px; line-height:30px; background-size:cover;}.cp-custom{padding: 12px;}.cp-custom #cpToggle{background: none;}.cp-custom i{font-size: 15px;color:#3C4DFF;}
 	</style>
+    <style type="text/css">
+        /* Only Demo Purpose */
+        .colorPanel {
+            margin: 0;
+            padding: 5px;
+            position: fixed;
+            z-index: 100;
+            min-width: 20px;
+            border-radius: 3px 0 0 3px;
+            background-color: #EDC63C;
+            right: 0;
+            top: 35%;
+        }
+
+            .colorPanel ul {
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                display: none;
+            }
+
+                .colorPanel ul li {
+                    display: block;
+                    margin-top: 10px;
+                }
+
+                .colorPanel ul a {
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    border: #fff 1px solid;
+                }
+
+            .colorPanel a.cart {
+                border-bottom: 1px solid rgba(255,255,255,.3);
+                margin-bottom: 6px;
+                padding-bottom: 8px;
+                display: block;
+            }
+
+        #cpToggle {
+            display: block;
+            height: 30px;
+            width: 20px;
+            line-height: 30px;
+            background-size: cover;
+        }
+
+        .cp-custom {
+            padding: 12px;
+        }
+
+            .cp-custom #cpToggle {
+                background: none;
+            }
+
+            .cp-custom i {
+                font-size: 15px;
+                color: #3C4DFF;
+            }
+
+        .numberPanel-Desktop {
+        }
+
+        .numberPanel-Mobile {
+            display: none;
+        }
+
+        .logo-desktop {
+        }
+
+        .logo-mobile {
+            display: none;
+        }
+
+        @media screen and (max-width: 991px) {
+            .numberPanel-Desktop {
+                display: none;
+            }
+
+            .numberPanel-Mobile {
+                display: block;
+            }
+
+            .logo-desktop {
+                display: none;
+            }
+
+            .logo-mobile {
+                display: block;
+            }
+        }
+    </style>
 	<script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -37,7 +130,16 @@
 				</a>
 				<!-- #end Logo -->
 				<!-- HeaderTop -->
-				<div class="header-top">
+                <div class="col-md-6 col-sm-12 logo-desktop">
+
+                    <span style="font-size:28px;font-weight:400"><span style="color:#f93">SRI LAXMI </span>REFRIGERATOR SERVICE</span>
+
+                </div>
+                <div class="col-md-6 col-sm-12 logo-mobile" style="text-align:center;">
+                    <span style="font-size:18px;font-weight:400"><span style="color:#f93">SRI LAXMI<br /> </span>REFRIGERATOR SERVICE</span>
+
+                </div>
+				<!--<div class="header-top">
 					<ul class="top-contact">
 						<li class="t-phone t-phone1 t-phone-s2">
 							<span><small><em class="color-secondary">24H</em> EMERGENCY SERVICE</small> <em class="fa fa-phone" aria-hidden="true"></em> <a href="#">9347219485</a></span>
@@ -45,9 +147,43 @@
 						<li class="t-phone t-phone1 t-phone-s2">
 							<span><small>CALL OFFICE  </small> <em class="fa fa-phone" aria-hidden="true"></em> <a href="#">9346219485</a></span>
 						</li>
-						<!--<li class="quote-btn"><a href="request-service.html" class="btn">Schedule Service Now</a></li>-->
+						<li class="quote-btn"><a href="request-service.html" class="btn">Schedule Service Now</a></li>
 					</ul>
-				</div>
+				</div>-->
+                <div class="col-md-6 col-sm-12">
+                    <div class="numberPanel-Desktop" style="float:right" id="numberPanel-Desktop">
+                        <ul class="top-contact">
+                            <li class="t-phone t-phone1 t-phone-s2">
+                                <span><small><em class="color-secondary">24H</em> EMERGENCY SERVICE</small> <em class="fa fa-phone" aria-hidden="true"></em> <a href="#">9347219485</a></span>
+                            </li>
+                            <li class="t-phone t-phone1 t-phone-s2">
+                                <span><small>CALL OFFICE </small> <em class="fa fa-phone" aria-hidden="true"></em> <a href="#">9346219485</a></span>
+                            </li>-->
+                            <!--<li class="quote-btn"><a href="request-service.html" class="btn">Schedule Service Now</a></li>--->
+                        </ul>
+                    </div>
+                    <div class="numberPanel-Mobile" id="numberPanel-Mobile">
+                        <div class="col-sm-12">
+                            <div class="col-sm-6 pull-left">
+                                <ul class="top-contact">
+                                    <li class="t-phone t-phone1 t-phone-s2">
+                                        <span><small><em class="color-secondary">24H</em> EMERGENCY SERVICE</small> <em class="fa fa-phone" aria-hidden="true"></em> <a href="#">9347219485</a></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 pull-right">
+                                <ul class="top-contact">
+                                    <li class="t-phone t-phone1 t-phone-s2">
+                                        <span><small>CALL OFFICE </small> <em class="fa fa-phone" aria-hidden="true"></em> <a href="#">9346219485</a></span>
+                                    </li>
+                                    <!--<li class="quote-btn"><a href="request-service.html" class="btn">Schedule Service Now</a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
 				<!-- #end HeaderTop -->
 				<!-- NavBar Trigger -->
 				<div class="navbar-header">
